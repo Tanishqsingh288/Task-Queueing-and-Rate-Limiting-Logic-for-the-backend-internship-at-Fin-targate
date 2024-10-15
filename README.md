@@ -1,2 +1,3 @@
 # Task-Queueing-and-Rate-Limiting-Logic-for-the-backend-internship-at-Fin-targate
 This Node.js project implements a user task queuing system with rate limiting using MongoDB. 
+It allows users to submit tasks via a POST API route, ensuring that each user can only process one task per second and up to 20 tasks per minute. The tasks are queued for each user, maintaining order and respecting the rate limits. When a task is completed, it logs the user ID and timestamp to the database. The server utilizes Express for handling requests and Mongoose for MongoDB interactions, providing a scalable solution for managing user tasks efficiently.
